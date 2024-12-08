@@ -1,17 +1,21 @@
 {
-  "name": "cypress-samoel-1",
-  "version": "1.0.0",
+  "name": "cypress-samoel",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "npx cypress open",
-    "cypress:run": "npx cypress run",
+    "cypress:run:e2e:production:headless": "npx cypress run --config-file cypress/config/cypress-e2e-production.config.js",
+    "cypress:run:e2e:production:visual": "npx cypress open --config-file cypress/config/cypress-e2e-production.config.js",
+    "cypress:run:api:production:headless": "npx cypress run --config-file cypress/config/cypress-api-production.config.js",
+    "cypress:run:api:production:visual": "npx cypress open --config-file cypress/config/cypress-api-production.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.16.1"
+    "@faker-js/faker": "^9.3.0",
+    "cypress": "^13.16.1",
+    "cypress-file-upload": "^5.0.8"
   }
 }
