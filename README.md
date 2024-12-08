@@ -1,4 +1,4 @@
-# Projeto de Testes com Cypress
+# Cypress Test Project
 
 This repository contains automated tests both to E2E as API testing.
 
